@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mi Formulario</h1>
+    <form action="">
+        <fieldset>
+            <legend>Data Capture</legend> 
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" name="name" required
+                   pattern="[A-Za-z]+"
+                   title="El nombre solo puede contener letras.">
+            <label for="last_name">Last Name:</label>
+            <input type="text" placeholder="Enter your last name" name="last_name" size="15" required
+                   pattern="[A-Za-z]+"
+                   title="El apellido solo puede contener letras.">
+                   <br>
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your Email" name="email" required
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                   title="Por favor, introduce un correo electrónico válido. Ejemplo: nombre@dominio.com">
+            <label for="pass">Password:</label>
+            <input type="password" placeholder="Enter your password" name="pass" maxlength="10" minlength="8" required
+                   pattern=".{8,}"
+                   title="La contraseña debe tener al menos 8 caracteres.">
+                   <br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Seleccione una(s) Opción(es)</legend> 
+            <input type="radio" name="sexo" value="male" checked>Male
+            <input type="radio" name="sexo" value="female">Female
+            <input type="radio" name="sexo" value="other">Other
+            <br>
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" name="hobbies" value="sports">Sports
+            <input type="checkbox" name="hobbies" value="reading">Reading
+            <input type="checkbox" name="hobbies" value="music">Music
+            <input type="checkbox" name="hobbies" value="trips">Trips
+            <label for="Birthdate">Birthdate</label>
+            <input type="Date" name="Birthdate" required><br>
+        </fieldset>
+
+        <button type="button">Enviar</button>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>

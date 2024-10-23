@@ -1,0 +1,78 @@
+   body {
+        font-family: Arial, sans-serif;
+        background-color: #8e8ec4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    form {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    fieldset {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    legend {
+        font-weight: bold;
+        padding: 0 10px;
+        color: #555;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],pattern
+    input[type="radio"],
+    input[type="checkbox"],
+    input[type="date"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    button,
+    input[type="submit"] {
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    button:hover,
+    input[type="submit"]:hover {
+        background-color: #4cae4c;
+    }
+
+    .hobbies-label {
+        margin-bottom: 5px;
+    }
